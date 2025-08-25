@@ -2,5 +2,7 @@ from .views import *
 from django.urls import path
 
 urlpatterns = [
-    path('bonjour/', bonjour, name='bonjour'),
+    path('anniversaire/', getAnniversaire, name='getAnniversaire'),
+    path('anniversaire/add/', postAnniversaire, name='postAnniversaire'),
+    path('anniversaire/today/', Anniversaire_today, name='Anniversaire_today'),
 ]
